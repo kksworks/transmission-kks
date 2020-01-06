@@ -595,7 +595,8 @@ tr_globalIPv6 (void)
     {
         int addrlen = 16;
         const int rc = tr_globalAddress (AF_INET6, ipv6, &addrlen);
-        have_ipv6 = (rc >= 0) && (addrlen == 16);
+        // have_ipv6 = (rc >= 0) && (addrlen == 16);
+        have_ipv6 = 0; // kksworks
         last_time = now;
     }
 

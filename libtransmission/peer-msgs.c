@@ -1362,7 +1362,8 @@ peerMadeRequest (tr_peerMsgs * msgs, const struct peer_request * req)
     else if (msgs->peer.pendingReqsToClient + 1 >= REQQ)
         dbgmsg (msgs, "rejecting request ... reqq is full");
     else
-        allow = true;
+        // allow = true;
+	allow = false;
 
     if (allow) {
         msgs->peerAskedFor[msgs->peer.pendingReqsToClient++] = *req;
