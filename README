@@ -1,3 +1,14 @@
+## 빌드방법
+
+mkdir build
+cmake ../
+apt-get install checkinstall
+checkinstall --install=no
+
+zzzzz
+오케이~~
+
+
 ABOUT
 
   Transmission is a fast, easy, and free BitTorrent client.
